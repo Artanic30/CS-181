@@ -142,6 +142,9 @@ class Stack:
         "Push 'item' onto the stack"
         self.list.append(item)
 
+    def log(self):
+        return self.list
+
     def pop(self):
         "Pop the most recently pushed item from the stack"
         return self.list.pop()
@@ -156,6 +159,9 @@ class Queue:
 
     def __init__(self):
         self.list = []
+
+    def log(self):
+        return self.list
 
     def push(self, item):
         "Enqueue the 'item' into the queue"

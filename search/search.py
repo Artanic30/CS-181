@@ -89,70 +89,118 @@ def depthFirstSearch(problem):
     print("Start's successors:", problem.getSuccessors(problem.getStartState()))
     """
     "*** YOUR CODE HERE ***"
+    visited = []
     current_point = {
         "state": problem.getStartState(),
         "path": [],
-        'visited': []
     }
     process_stack = util.Stack()
     process_stack.push(current_point)
 
-    if len(problem.getSuccessors(current_point['state'])) != 0:
-        for i in problem.getSuccessors(current_point['state']):
-            potential_successor = i[0]
-            if potential_successor in current_point['visited']:
-                continue
-            process_stack.push({
-                'state': potential_successor,
-                "path": current_point['path'] + [i[1]],
-                'visited': current_point['visited'] + [current_point['state']]
-            })
-
-    while not problem.isGoalState(current_point['state']) or process_stack.isEmpty():
-        print('Now at: ', current_point['state'])
-
-        if len(problem.getSuccessors(current_point['state'])) != 0:
-            for i in problem.getSuccessors(current_point['state']):
-                potential_successor = i[0]
-                if potential_successor in current_point['visited']:
-                    continue
-                process_stack.push({
-                    'state': potential_successor,
-                    "path": current_point['path'] + [i[1]],
-                    'visited': current_point['visited'] + [current_point['state']]
-                })
-
+    while (not problem.isGoalState(current_point['state'])) or process_stack.isEmpty():
         current_point = process_stack.pop()
 
+        if current_point['state'] in visited:
+            continue
+
+        visited.append(current_point['state'])
+
+        if problem.isGoalState(current_point['state']):
+            break
+
+        tem_list = problem.getSuccessors(current_point['state'])
+        if len(tem_list) != 0:
+            for i in tem_list:
+                potential_successor = i[0]
+                if potential_successor not in visited:
+                    process_stack.push({
+                        'state': potential_successor,
+                        "path": current_point['path'] + [i[1]],
+                    })
+
     return current_point['path']
-
-
-
-
-
-
-
-
-    print(type(problem))
-    print("Start:", problem.getStartState())
-    print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
-    print("Start's successors:", problem.getSuccessors(problem.getStartState()))
-
-
-
-    return [s, s, w]
 
 
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    visited = []
+    current_point = {
+        "state": problem.getStartState(),
+        "path": [],
+    }
+    process_queue = util.Queue()
+    process_queue.push(current_point)
+
+    while (not problem.isGoalState(current_point['state'])) or process_queue.isEmpty():
+        current_point = process_queue.pop()
+
+        if current_point['state'] in visited:
+            continue
+
+        visited.append(current_point['state'])
+
+        if problem.isGoalState(current_point['state']):
+            break
+
+        tem_list = problem.getSuccessors(current_point['state'])
+        if len(tem_list) != 0:
+            for i in tem_list:
+                potential_successor = i[0]
+                if potential_successor not in visited:
+                    process_queue.push({
+                        'state': potential_successor,
+                        "path": current_point['path'] + [i[1]],
+                    })
+
+    return current_point['path']
+
 
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    # print("Start:", problem.getStartState())
+    # print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
+    # print("Start's successors:", problem.getSuccessors(problem.getStartState()))
+    visited = []
+    current_point = {
+        "state": problem.getStartState(),
+        "path": [],
+        'cost': 0
+    }
+    process_pri_queue = util.PriorityQueue()
+    process_pri_queue.push(current_point, current_point['cost'])
+
+    while (not problem.isGoalState(current_point['state'])) or process_pri_queue.isEmpty():
+        current_point = process_pri_queue.pop()
+
+        if current_point['state'] in visited:
+            continue
+
+        visited.append(current_point['state'])
+
+        if problem.isGoalState(current_point['state']):
+            break
+
+        tem_list = problem.getSuccessors(current_point['state'])
+        if len(tem_list) != 0:
+            for i in tem_list:
+                potential_successor = i[0]
+                if potential_successor not in visited:
+                    process_pri_queue.push({
+                        'state': potential_successor,
+                        "path": current_point['path'] + [i[1]],
+                        'cost': i[2] + current_point['cost']
+                    }, i[2] + current_point['cost'])
+                else:
+                    process_pri_queue.update({
+                        'state': potential_successor,
+                        "path": current_point['path'] + [i[1]],
+                        'cost': i[2] + current_point['cost']
+                    }, i[2] + current_point['cost'])
+
+    return current_point['path']
 
 
 def nullHeuristic(state, problem=None):
@@ -166,7 +214,44 @@ def nullHeuristic(state, problem=None):
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    visited = []
+    current_point = {
+        "state": problem.getStartState(),
+        "path": [],
+        'cost': 0
+    }
+    process_pri_queue = util.PriorityQueue()
+    process_pri_queue.push(current_point, current_point['cost'] + heuristic(current_point["state"], problem))
+
+    while (not problem.isGoalState(current_point['state'])) or process_pri_queue.isEmpty():
+        current_point = process_pri_queue.pop()
+
+        if current_point['state'] in visited:
+            continue
+
+        visited.append(current_point['state'])
+
+        if problem.isGoalState(current_point['state']):
+            break
+
+        tem_list = problem.getSuccessors(current_point['state'])
+        if len(tem_list) != 0:
+            for i in tem_list:
+                potential_successor = i[0]
+                if potential_successor not in visited:
+                    process_pri_queue.push({
+                        'state': potential_successor,
+                        "path": current_point['path'] + [i[1]],
+                        'cost': i[2] + current_point['cost']
+                    }, i[2] + current_point['cost'] + heuristic(potential_successor, problem))
+                else:
+                    process_pri_queue.update({
+                        'state': potential_successor,
+                        "path": current_point['path'] + [i[1]],
+                        'cost': i[2] + current_point['cost']
+                    }, i[2] + current_point['cost'] + heuristic(potential_successor, problem))
+
+    return current_point['path']
 
 
 # Abbreviations
