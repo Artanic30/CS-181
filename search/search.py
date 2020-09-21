@@ -131,8 +131,7 @@ def breadthFirstSearch(problem):
     }
     process_queue = util.Queue()
     process_queue.push(current_point)
-
-    while (not problem.isGoalState(current_point['state'])) or process_queue.isEmpty():
+    while (not problem.isGoalState(current_point['state'])) and not process_queue.isEmpty():
         current_point = process_queue.pop()
 
         if current_point['state'] in visited:
@@ -172,7 +171,7 @@ def uniformCostSearch(problem):
     process_pri_queue = util.PriorityQueue()
     process_pri_queue.push(current_point, current_point['cost'])
 
-    while (not problem.isGoalState(current_point['state'])) or process_pri_queue.isEmpty():
+    while (not problem.isGoalState(current_point['state'])) and not process_pri_queue.isEmpty():
         current_point = process_pri_queue.pop()
 
         if current_point['state'] in visited:
@@ -223,7 +222,7 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     process_pri_queue = util.PriorityQueue()
     process_pri_queue.push(current_point, current_point['cost'] + heuristic(current_point["state"], problem))
 
-    while (not problem.isGoalState(current_point['state'])) or process_pri_queue.isEmpty():
+    while (not problem.isGoalState(current_point['state'])) and not process_pri_queue.isEmpty():
         current_point = process_pri_queue.pop()
 
         if current_point['state'] in visited:
