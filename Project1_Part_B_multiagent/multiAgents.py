@@ -165,7 +165,6 @@ class MinimaxAgent(MultiAgentSearchAgent):
 
         def get_min(state, cur_agent, depth):
             if state.isLose() or state.isWin():
-                print('reach terminal')
                 return state.getScore()
 
             total_agent = state.getNumAgents()
@@ -268,7 +267,54 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
         legal moves.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        PositiveInfinite = float("inf")
+        NegativeInfinite = -float("inf")
+
+        def get_max(state, cur_agent, depth):
+            if state.isWin() or state.isLose():
+                return state.getScore()
+
+            if depth == self.depth:
+                return self.evaluationFunction(state)
+
+            result_score = NegativeInfinite
+
+            actions = state.getLegalActions(cur_agent)
+            final_action = "STOP"
+            for action in actions:
+                next_state = state.generateSuccessor(cur_agent, action)
+                sub_score = get_min(next_state, cur_agent + 1, depth)
+
+                if sub_score > result_score:
+                    result_score = sub_score
+                    final_action = action
+
+            if depth == 0:
+                return final_action
+            return result_score
+
+        def get_min(state, cur_agent, depth):
+            if state.isLose() or state.isWin():
+                return state.getScore()
+
+            total_agent = state.getNumAgents()
+            result_score = 0
+
+            actions = state.getLegalActions(cur_agent)
+            p = 1.0 / len(actions)
+            for action in actions:
+                next_state = state.generateSuccessor(cur_agent, action)
+                # last ghost
+                if cur_agent == total_agent - 1:
+                    sub_score = get_max(next_state, 0, depth + 1)
+                else:
+                    sub_score = get_min(next_state, cur_agent + 1, depth)
+
+                result_score += sub_score * p
+
+            return result_score
+
+        return get_max(gameState, 0, 0)
 
 
 def betterEvaluationFunction(currentGameState):
@@ -279,7 +325,34 @@ def betterEvaluationFunction(currentGameState):
     DESCRIPTION: <write something here so we know what you did>
     """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    position = currentGameState.getPacmanPosition()
+    ori_score = currentGameState.getScore()
+    food = currentGameState.getFood().asList()
+    ghosts = currentGameState.getGhostStates()
+
+    dis_ghost = 0
+    for g in ghosts:
+        dis = util.manhattanDistance(position, g.getPosition())
+        if dis > 5:
+            dis = 5
+        dis = pow((-dis + 5), 8) * 1.0
+        if g.scaredTimer > 0:
+            dis_ghost += dis
+        else:
+            dis_ghost -= dis
+
+    dis_food = 0
+    for f in food:
+        dis = util.manhattanDistance(position, f)
+        if dis > 10:
+            dis = 10
+        dis = pow(-dis + 10, 4) * 1.0 / 750
+        dis_food += dis
+
+    ori_score += dis_ghost + dis_food
+
+    # print(dis_ghost, dis_food, ori_score)
+    return ori_score
 
 
 # Abbreviation
