@@ -1,143 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0d9532a-6872-49b5-9614-4afede84ad32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/p2_logic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autograder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ghostAgents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ghostbustersGameSimple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grading.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphicsDisplay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphicsUtils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hybridAgents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboardAgents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/bigCorners.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/bigMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/bigSafeSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/bigSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/boxSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/capsuleClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/contestClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/contoursMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/greedySearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/maze2x2.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/mediumClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/mediumCorners.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/mediumDottedMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/mediumMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/mediumSafeSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/mediumScaryMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/mediumSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/minimaxClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/oddSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/openClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/openMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/openSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/originalClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling1.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling2.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling3.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling4.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling5.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling6.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling7.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling8.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/patrolling9.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/smallClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/smallMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/smallSafeSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/smallSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/testClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/testMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/testSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/tinyCorners.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/tinyMaze.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/tinySafeSearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/tinySearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/trappedClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/trickyClassic.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/trickySearch.lay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logicAgents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logicPlan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logic_planTestClasses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logic_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pacman.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pacmanAgents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patrollingGhostAgents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectParams.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pycosat_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/searchUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testClasses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testParser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/CONFIG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/CONFIG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/correctSentence1.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/correctSentence1.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/correctSentence2.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/correctSentence2.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/correctSentence3.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/correctSentence3.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/findModelSentence1.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/findModelSentence1.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/findModelSentence2.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/findModelSentence2.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/findModelSentence3.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q1/findModelSentence3.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/CONFIG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atLeastOne.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atLeastOne.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atLeastOneCNF.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atLeastOneCNF.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atMostOne.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atMostOne.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atMostOneCNF.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/atMostOneCNF.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/exactlyOne.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/exactlyOne.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/exactlyOneCNF.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q2/exactlyOneCNF.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q3/CONFIG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q3/extractActionSequence1.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q3/extractActionSequence1.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q3/extractActionSequence2.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q3/extractActionSequence2.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q3/extractActionSequence3.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q3/extractActionSequence3.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q4/CONFIG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q4/allDirections.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q4/allDirections.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q4/northEast.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q4/northEast.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q4/northSouth.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q4/northSouth.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q5/CONFIG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q5/positionLogicPlan1.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q5/positionLogicPlan1.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q5/positionLogicPlan2.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q5/positionLogicPlan2.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q5/positionLogicPlan3.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q5/positionLogicPlan3.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q6/CONFIG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q6/foodLogicPlan1.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q6/foodLogicPlan1.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q6/foodLogicPlan2.solution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/q6/foodLogicPlan2.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/textDisplay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
-    </list>
+    <list default="true" id="c0d9532a-6872-49b5-9614-4afede84ad32" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602227454198</updated>
-      <workItem from="1602227455573" duration="21840000" />
+      <workItem from="1602227455573" duration="22167000" />
     </task>
     <servers />
   </component>
@@ -258,49 +122,49 @@
     </state>
     <state x="184" y="112" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602233806458" />
     <state x="184" y="112" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1602345983693" />
-    <state width="1398" height="321" key="GridCell.Tab.0.bottom" timestamp="1602345967298">
+    <state width="1398" height="321" key="GridCell.Tab.0.bottom" timestamp="1602346405650">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235175738" />
-    <state width="1398" height="321" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602345967298" />
-    <state width="1398" height="321" key="GridCell.Tab.0.center" timestamp="1602345967297">
+    <state width="1398" height="321" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602346405650" />
+    <state width="1398" height="321" key="GridCell.Tab.0.center" timestamp="1602346405650">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235175736" />
-    <state width="1398" height="321" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602345967297" />
-    <state width="1398" height="321" key="GridCell.Tab.0.left" timestamp="1602345967296">
+    <state width="1398" height="321" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602346405650" />
+    <state width="1398" height="321" key="GridCell.Tab.0.left" timestamp="1602346405649">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235175735" />
-    <state width="1398" height="321" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602345967296" />
-    <state width="1398" height="321" key="GridCell.Tab.0.right" timestamp="1602345967297">
+    <state width="1398" height="321" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602346405649" />
+    <state width="1398" height="321" key="GridCell.Tab.0.right" timestamp="1602346405650">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235175737" />
-    <state width="1398" height="321" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602345967297" />
-    <state width="1398" height="321" key="GridCell.Tab.1.bottom" timestamp="1602345967299">
+    <state width="1398" height="321" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602346405650" />
+    <state width="1398" height="321" key="GridCell.Tab.1.bottom" timestamp="1602346405652">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="321" key="GridCell.Tab.1.bottom/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235149593" />
-    <state width="1398" height="321" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602345967299" />
+    <state width="1398" height="321" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602346405652" />
     <state width="1398" height="321" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1602342271339" />
-    <state width="1398" height="321" key="GridCell.Tab.1.center" timestamp="1602345967299">
+    <state width="1398" height="321" key="GridCell.Tab.1.center" timestamp="1602346405651">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="321" key="GridCell.Tab.1.center/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235149592" />
-    <state width="1398" height="321" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1602345967299" />
+    <state width="1398" height="321" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1602346405651" />
     <state width="1398" height="321" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1602342271338" />
-    <state width="1398" height="321" key="GridCell.Tab.1.left" timestamp="1602345967298">
+    <state width="1398" height="321" key="GridCell.Tab.1.left" timestamp="1602346405651">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="321" key="GridCell.Tab.1.left/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235149591" />
-    <state width="1398" height="321" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1602345967298" />
+    <state width="1398" height="321" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1602346405651" />
     <state width="1398" height="321" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1602342271336" />
-    <state width="1398" height="321" key="GridCell.Tab.1.right" timestamp="1602345967299">
+    <state width="1398" height="321" key="GridCell.Tab.1.right" timestamp="1602346405651">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="321" key="GridCell.Tab.1.right/-268.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602235149592" />
-    <state width="1398" height="321" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1602345967299" />
+    <state width="1398" height="321" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1602346405651" />
     <state width="1398" height="321" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1602342271339" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1602227976888">
       <screen x="0" y="0" width="1440" height="900" />
@@ -326,39 +190,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logicPlan.py</url>
-          <line>378</line>
+          <line>379</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logicPlan.py</url>
-          <line>379</line>
+          <line>380</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logicPlan.py</url>
-          <line>369</line>
+          <line>370</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logicPlan.py</url>
-          <line>383</line>
+          <line>384</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logicPlan.py</url>
-          <line>382</line>
+          <line>383</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logicPlan.py</url>
-          <line>381</line>
+          <line>382</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/p2_logic$autograder.coverage" NAME="autograder Coverage Results" MODIFIED="1602344878285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/p2_logic$autograder.coverage" NAME="autograder Coverage Results" MODIFIED="1602345988076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/p2_logic$pacman.coverage" NAME="pacman Coverage Results" MODIFIED="1602345967280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
